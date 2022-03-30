@@ -1,5 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'example1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,12 +17,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Welcome to Flutter'),
         ),
-        body: Center(
-          child: Column(
-            children: const [
-              Text('Hello World'),
-            ],
-          ),
+        body: const Center(
+          child: Text('Hello World'),
         ),
       ),
     );
