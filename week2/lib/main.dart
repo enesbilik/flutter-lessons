@@ -1,26 +1,33 @@
 import 'package:flutter/material.dart';
 
-import 'example1.dart';
-
 void main() {
-  runApp(const MyApp());
+  runApp(Enes());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+//TODO: ekranın ortasında bir yazı olsun
 
+class Enes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Flutter',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+          body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: Text(
+              "Atakan",
+              style: TextStyle(
+                color: Colors.cyan,
+                fontSize: 42,
+              ),
+            ),
+          ),
+          Text(
+            "Elif",
+          ),
+        ],
+      )),
     );
   }
 }
